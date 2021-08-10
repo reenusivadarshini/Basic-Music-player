@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>MUSIC WEBSITE</title>
+        <link rel="stylesheet" href=music.css>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <i class="fa fa-music" style="font-size:48px;color:white"></i>
+                   <ul>
+                       <li><a href="#"> Welcome </a></li>>
+                       <li><a href="#"> About us </a></li>>
+                       <li><a href="#"> Artist </a></li>>
+                       <li><a href="#"> Songs </a></li>>
+                   </ul>
+             </div>
+             <div class="content">
+                 <div class="left-col">
+                     <h1>The<br>Song</h1>
+                  </div>
+                  <div class="right-col">
+                      <p>Click  here to listen</p>
+                      <img  src="http://clipart-library.com/images/8czn5zKKi.png" id="icon">
+                  </div>
+             </div>>
+        </div>
+<audio id="mySong" >
+     <source src="file:///c:/Users/Hi/Desktop/reenu vs/song.mp3" type="audio/mp3">
+</audio>>
+<script>
+    var mySong=document.getElementById("mySong");
+    var icon=document.getElementById("icon");
+    icon.onclick=function()
+    {
+        if(mySong.paused)
+        {
+        mySong.play();
+        icon.src="https://png.pngtree.com/png-clipart/20190516/original/pngtree-pause-vector-icon-png-image_3791321.jpg"
+        }
+        else{
+            mySong.pause();
+            icon.src="http://clipart-library.com/images/8czn5zKKi.png"
+        }
+    }
+</script>
+</body>
+</html>
